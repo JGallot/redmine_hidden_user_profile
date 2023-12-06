@@ -1,0 +1,4 @@
+# french strings go here for Rails i18n
+fr:
+  permission_view_profiles: "Voir les profils utilisateurs"
+  label_hidden_profile_unauthorized_access: "Pour des raisons de sécurité l'accès au profil utilisateur n'est pas disponible."

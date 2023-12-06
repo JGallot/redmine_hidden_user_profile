@@ -1,2 +1,3 @@
 pl:
   permission_view_profiles: "Podgląd profili użytkownika"
+  label_hidden_profile_unauthorized_access: "Sorry you are not allowed to view users profile."
