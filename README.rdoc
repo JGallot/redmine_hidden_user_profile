@@ -4,5 +4,7 @@
 This plugin add a right in order to allow people to see users' profile
 Without this right, only Redmine administrators can see users'profile, other people will have an error message
 
+* Links to user's profile are deleted (watchers, issues list, custom fields, assigned to, journals)
+
 ---
 This plugin has been tested on Redmine 5.0.X

@@ -23,7 +23,6 @@ module ApplicationHelper
       if (User.current.admin || User.current.allowed_to?(:view_profiles, @project, :global => true)) && user.is_a?(User)
         name = h(user.name(options[:format]))
         if user.active?
-          #link_to name, :controller => 'users', :action => 'show', :id => user
           user.is_a?(User) ? link_to_principal(user, options) : h(user.to_s)
         else
           name
