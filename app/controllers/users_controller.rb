@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   self.main_menu = false
 
   before_action :find_user, :check_hidden_permission, :only => [:show]
+  before_action :find_user, :only => [:edit, :update, :destroy]
   accept_api_auth :index, :show, :create, :update, :destroy
 
 
@@ -13,6 +14,9 @@ class UsersController < ApplicationController
   include SortHelper
   helper :custom_fields
   include CustomFieldsHelper
+  helper :principal_memberships
+  helper :activities
+  include ActivitiesHelper
 
   def check_hidden_permission
     if !User.current.admin && !User.current.allowed_to?(:view_profiles, @project, :global => true)
