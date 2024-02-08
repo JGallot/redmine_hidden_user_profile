@@ -5,7 +5,7 @@ Redmine::Plugin.register :redmine_hidden_user_profile do
   name 'Redmine Hidden User Profile plugin'
   author 'Jérôme GALLOT (based on Monika Perwejnis work)'
   description 'Add permission to view user profile, hide members box in projects, Link to user is a string. Member profile page is not available - 403.'
-  version '0.0.3'
+  version '0.0.4'
   author_url 'https://github.com/JGallot'
 
   permission :view_profiles, :user => :show
